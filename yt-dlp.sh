@@ -11,7 +11,6 @@ while read -r CHANNEL; do
     [ -z "$CHANNEL" ] && continue
     yt-dlp \
       --extract-audio \
-      --cookies /opt/ytaudio/cookies.txt \
       --audio-format mp3 \
       --audio-quality 0 \
       --dateafter now-180days \
